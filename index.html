@@ -5,31 +5,60 @@
     <title>Your Moving Companion</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<style type="text/css">
+    html {
+        height: 100%
+    }
+
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0
+    }
+
+    #map-canvas {
+        max-width: 100%;
+        height: 100%;
+    }
+</style>
 <body>
 
-    <form id="form-container" class="form-container">
-        <label for="street">Street: </label><input type="text" id="street" value="">
-        <label for="city">City: </label><input type="text" id="city" value="">
-        <button id="submit-btn">Submit</button>
-    </form>
+<div id="map-canvas"></div>
 
-    <hr>
+<form id="form-container" class="form-container">
+    <label for="street">Street: </label><input type="text" id="street" value="">
+    <label for="city">City: </label><input type="text" id="city" value="">
+    <button id="submit-btn">Submit</button>
+</form>
 
-    <h2 id="greeting" class="greeting">Where do you want to live?</h2>
+<hr>
+
+<div>
+    <p>First name: <input data-bind="value: firstName"/></p>
+    <p>Last name: <input data-bind="value: lastName"/></p>
+    <h2>Hello, <span data-bind="text: fullName"> </span>!</h2>
+</div>
+
+<h2 id="greeting" class="greeting">Where do you want to live?</h2>
 
 
-    <div class="wikipedia-container">
-        <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
-        <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
-    </div>
+<div class="wikipedia-container">
+    <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
+    <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
+</div>
 
 
-    <div class="nytimes-container">
-        <h3 id="nytimes-header">New York Times Articles</h3>
-        <ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</ul>
-    </div>
+<div class="nytimes-container">
+    <h3 id="nytimes-header">New York Times Articles</h3>
+    <ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit and
+        the NY Times will tell you here!
+    </ul>
+</div>
 
-    <script src="js/libs/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+<script src="js/libs/jquery.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places?key=AIzaSyAfwmc6Vimi26yrsV1-6jsFWyGu8SNRbDs"></script>
+<script type="text/javascript" src="js/knockout-3.4.0.js"></script>
+<script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

@@ -69,6 +69,22 @@ function loadData() {
     });
 
     return false;
-};
+}
+
+function initialize() {
+    var mapProp = {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("map-canvas"),mapProp);
+    var marker = new google.maps.Marker({
+        position: mapProp,
+        map: map,
+        title: 'Hello World!'
+    });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
 
 $('#form-container').submit(loadData);
