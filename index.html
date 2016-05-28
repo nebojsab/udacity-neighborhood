@@ -2,63 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Moving Companion</title>
+    <title>Paris Metro Stations</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 </head>
-<style type="text/css">
-    html {
-        height: 100%
-    }
-
-    body {
-        height: 100%;
-        margin: 0;
-        padding: 0
-    }
-
-    #map-canvas {
-        max-width: 100%;
-        height: 300px;
-    }
-</style>
 <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Paris Metro Stations</a>
+        </div>
 
-<div id="map-canvas"></div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form id="form-container" class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input class="form-control" id="filter-textbox" data-bind="textInput: filter, css: { visible: isVisible }" placeholder="Type here to filter...">
+                </div>
+            </form>
+            <ul class="nav navbar-nav pull-right">
+                <li>
+                    <a id="toggle" href="#" data-bind="click: toggleVisibility">Toggle List <i class="glyphicon glyphicon-menu-hamburger"></i></a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div id="map"></div>
+<div data-bind="css: { visible: isVisible }" class="contentPLH">
+    <div id="listview">
+        <h3 data-bind="text: loadingMsg, visible: loadingMsg"></h3>
+        <ul data-bind="foreach: filterResults">
+            <li class="station-item">
+                <a href="#" data-bind="click: $root.clickHandler">
+                    <span class="station-name" data-bind="text: name"></span>
+                    <span class="station-line" data-bind="text: line"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
 
-<form id="form-container" class="form-container">
-    <label for="street">Street: </label><input type="text" id="street" value="">
-    <label for="city">City: </label><input type="text" id="city" value="">
-    <button id="submit-btn">Submit</button>
-</form>
 
-<hr>
+    <!--<div class="wikipedia-container">-->
+        <!--<h3 id="wikipedia-header">Relevant Wikipedia Links</h3>-->
+        <!--<ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>-->
+    <!--</div>-->
 
-<div>
-    <p>First name: <input data-bind="value: firstName"/></p>
-    <p>Last name: <input data-bind="value: lastName"/></p>
-    <h2>Hello, <span data-bind="text: fullName"> </span>!</h2>
+
+    <!--<div class="nytimes-container">-->
+        <!--<h3 id="nytimes-header">New York Times Articles</h3>-->
+        <!--<ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit-->
+            <!--and-->
+            <!--the NY Times will tell you here!-->
+        <!--</ul>-->
+    <!--</div>-->
 </div>
-
-<h2 id="greeting" class="greeting">Where do you want to live?</h2>
-
-
-<div class="wikipedia-container">
-    <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
-    <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
-</div>
-
-
-<div class="nytimes-container">
-    <h3 id="nytimes-header">New York Times Articles</h3>
-    <ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit and
-        the NY Times will tell you here!
-    </ul>
-</div>
-
 <script src="js/libs/jquery.min.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places?key=AIzaSyAfwmc6Vimi26yrsV1-6jsFWyGu8SNRbDs"></script>
+<script async defer onerror="initMapLoadError()"
+        src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+</script>
 <script type="text/javascript" src="js/knockout-3.4.0.js"></script>
 <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/flickr.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

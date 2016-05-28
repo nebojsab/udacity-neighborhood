@@ -1,0 +1,92 @@
+{
+  "stations": [
+    {
+      "latitude": 48.862933,
+      "longitude": 2.336014,
+      "name": "Palais Royal - Musée du Louvre",
+      "note": "Palais Royal, Louvre",
+      "type": "metro",
+      "opened": "19/July/1900"
+    },
+    {
+      "latitude": 48.855294,
+      "longitude":  2.347044,
+      "name": "Cité",
+      "note": "",
+      "type": "metro",
+      "opened": "9/January/1910"
+    },
+    {
+      "latitude": 48.858607,
+      "longitude": 2.341996,
+      "name": "Pont Neuf",
+      "note": "Pont Neuf, Conciergerie",
+      "type": "metro",
+      "opened": "16 April 1926",
+      "wikipedia": "fr:ChГўtillon - Montrouge (mГ©tro de Paris)"
+    },
+    {
+      "latitude": 48.860744,
+      "longitude": 2.340769,
+      "name": "Louvre - Rivoli",
+      "note": " ",
+      "type": "metro",
+      "opened": "13 August 1900",
+      "wikipedia": "fr:ChГўtillon - Montrouge (mГ©tro de Paris)"
+    },
+    {
+      "latitude": 48.867604,
+      "longitude": 2.313214,
+      "name": "Champs-Élysées - Clemenceau",
+      "note": " ",
+      "type": "metro",
+      "opened": "19 July 1900",
+      "wikipedia": "fr:ChГўtillon - Montrouge (mГ©tro de Paris)"
+    },
+    {
+      "latitude": 48.864818,
+      "longitude": 2.300557,
+      "name": "Alma - Marceau",
+      "note": " ",
+      "type": "metro",
+      "opened": "27 May 1923",
+      "wikipedia": "fr:ChГўtillon - Montrouge (mГ©tro de Paris)"
+    },
+    {
+      "latitude": 48.874587,
+      "longitude": 2.321482,
+      "name": "Saint-Augustin",
+      "note": "Saint-Augustin",
+      "type": "metro",
+      "opened": "27 May 1923",
+      "wikipedia": "fr:ChГўtillon - Montrouge (mГ©tro de Paris)"
+    },
+    {
+      "latitude": 48.870894,
+      "longitude": 2.332046,
+      "name": "Opéra",
+      "note": "Opéra Garnier",
+      "type": "metro",
+      "opened": "5 November 1910",
+      "wikipedia": "fr:ChГўtillon - Montrouge (mГ©tro de Paris)"
+    },
+    {
+      "latitude": 48.857479,
+      "longitude": 2.351597,
+      "name": "Hôtel de Ville",
+      "note": " ",
+      "type": "metro",
+      "opened": "19 July 1900",
+      "wikipedia": "fr:ChГўtillon - Montrouge (mГ©tro de Paris)"
+    },
+    {
+      "latitude": 48.852934,
+      "longitude": 2.335328,
+      "name": "Mabillon",
+      "note": " ",
+      "type": "metro",
+      "opened": "10 March 1925",
+      "wikipedia": "fr:ChГўtillon - Montrouge (mГ©tro de Paris)"
+    }
+  ]
+}
