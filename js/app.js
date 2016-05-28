@@ -41,7 +41,7 @@ function MetroStations(dataObj) {
     var self = this;
     self.name = dataObj.name;
     self.line = dataObj.line;
-    self.division = dataObj.division;
+    self.url = dataObj.url;
     self.opened = dataObj.opened;
     self.latitude = parseFloat(dataObj.latitude);
     self.longitude = parseFloat(dataObj.longitude);
@@ -70,7 +70,8 @@ function MetroStations(dataObj) {
             content += '<p class="info-route-list">Opened: ';
             content += '<span class="info-routes">' + self.opened +
                 '</span></p>';
-            content += '<ul id="wikipedia-links"></ul>'
+            content += '<a class="wikiLink" href="' +
+                self.url + '" target="_blank">Wiki Info ' + '<i class="fa fa-wikipedia-w"></i>' + '</a>'
             self.infoWindow.setContent(content);
         }
 

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Paris Metro Stations</title>
+    <!--Font Awesome Links-->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <!--Local Styles-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 </head>
@@ -29,7 +32,7 @@
             </form>
             <ul class="nav navbar-nav pull-right">
                 <li>
-                    <a id="toggle" href="#" data-bind="click: toggleVisibility">Toggle List <i class="glyphicon glyphicon-menu-hamburger"></i></a>
+                    <a id="toggle" href="#" data-bind="click: toggleVisibility">Toggle List <i class="fa fa-align-justify" aria-hidden="true"></i></a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -42,8 +45,7 @@
         <ul data-bind="foreach: filterResults">
             <li class="station-item">
                 <a href="#" data-bind="click: $root.clickHandler">
-                    <span class="station-name" data-bind="text: name"></span>
-                    <span class="station-line" data-bind="text: line"></span>
+                    <i class="fa fa-train" aria-hidden="true"></i> <span class="station-name" data-bind="text: name"></span>
                 </a>
             </li>
         </ul>

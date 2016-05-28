@@ -6,7 +6,8 @@
       "name": "Palais Royal - Musée du Louvre",
       "note": "Palais Royal, Louvre",
       "type": "metro",
-      "opened": "19/July/1900"
+      "opened": "19 July 1900",
+      "url": "https://en.wikipedia.org/wiki/Palais-Royal"
     },
     {
       "latitude": 48.855294,
@@ -14,7 +15,8 @@
       "name": "Cité",
       "note": "",
       "type": "metro",
-      "opened": "9/January/1910"
+      "opened": "9 January 1910",
+      "url": "https://en.wikipedia.org/wiki/Cit%C3%A9_(Paris_M%C3%A9tro)"
     },
     {
       "latitude": 48.858607,
@@ -23,7 +25,7 @@
       "note": "Pont Neuf, Conciergerie",
       "type": "metro",
       "opened": "16 April 1926",
-      "wikipedia": "fr:ChГўtillon - Montrouge (mГ©tro de Paris)"
+      "url": "https://en.wikipedia.org/wiki/Pont_Neuf"
     },
     {
       "latitude": 48.860744,
@@ -32,7 +34,7 @@
       "note": " ",
       "type": "metro",
       "opened": "13 August 1900",
-      "wikipedia": "fr:ChГўtillon - Montrouge (mГ©tro de Paris)"
+      "url": "https://en.wikipedia.org/wiki/Louvre_%E2%80%93_Rivoli_(Paris_M%C3%A9tro)"
     },
     {
       "latitude": 48.867604,
@@ -41,7 +43,7 @@
       "note": " ",
       "type": "metro",
       "opened": "19 July 1900",
-      "wikipedia": "fr:ChГўtillon - Montrouge (mГ©tro de Paris)"
+      "url": "https://en.wikipedia.org/wiki/Champs-%C3%89lys%C3%A9es_%E2%80%93_Clemenceau_(Paris_M%C3%A9tro)"
     },
     {
       "latitude": 48.864818,
@@ -50,7 +52,7 @@
       "note": " ",
       "type": "metro",
       "opened": "27 May 1923",
-      "wikipedia": "fr:ChГўtillon - Montrouge (mГ©tro de Paris)"
+      "url": "https://en.wikipedia.org/wiki/Alma_%E2%80%93_Marceau_(Paris_M%C3%A9tro)"
     },
     {
       "latitude": 48.874587,
@@ -59,7 +61,7 @@
       "note": "Saint-Augustin",
       "type": "metro",
       "opened": "27 May 1923",
-      "wikipedia": "fr:ChГўtillon - Montrouge (mГ©tro de Paris)"
+      "url": "https://en.wikipedia.org/wiki/Saint-Augustin,_Paris"
     },
     {
       "latitude": 48.870894,
@@ -68,7 +70,7 @@
       "note": "Opéra Garnier",
       "type": "metro",
       "opened": "5 November 1910",
-      "wikipedia": "fr:ChГўtillon - Montrouge (mГ©tro de Paris)"
+      "url": "https://en.wikipedia.org/wiki/Palais_Garnier"
     },
     {
       "latitude": 48.857479,
@@ -77,7 +79,7 @@
       "note": " ",
       "type": "metro",
       "opened": "19 July 1900",
-      "wikipedia": "fr:ChГўtillon - Montrouge (mГ©tro de Paris)"
+      "url": "https://en.wikipedia.org/wiki/H%C3%B4tel_de_Ville_(Paris_M%C3%A9tro)"
     },
     {
       "latitude": 48.852934,
@@ -86,7 +88,7 @@
       "note": " ",
       "type": "metro",
       "opened": "10 March 1925",
-      "wikipedia": "fr:ChГўtillon - Montrouge (mГ©tro de Paris)"
+      "url": "https://en.wikipedia.org/wiki/Mabillon_(Paris_M%C3%A9tro)"
     }
   ]
 }
