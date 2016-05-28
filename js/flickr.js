@@ -88,6 +88,4 @@ function Flickr() {
 
 
 // Global flickr object to be utilized by the app
-var flickr = new Flickr();/**
- * Created by fix on 27.5.2016.
- */
+var flickr = new Flickr();

@@ -138,6 +138,40 @@ h5 {
     max-width: 50px;
 }
 
+/*.wikipedia-container{*/
+    /*position: absolute !important;*/
+    /*max-width: 300px;*/
+    /*width: 300px;*/
+    /*top: 70px;*/
+    /*left: 20px;*/
+    /*background: #f2f2f2;*/
+    /*padding: 30px;*/
+/*}*/
+
+/*input group icon*/
+/* enable absolute positioning */
+.inner-addon {
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .glyphicon,
+.inner-addon .fa{
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon,
+.left-addon .fa  { left:  0px;}
+.right-addon .glyphicon,
+.right-addon .fa { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
 /*media queries*/
 
 @media only screen and (max-width:767px) and (min-width: 280px){

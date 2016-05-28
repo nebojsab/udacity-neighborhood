@@ -1,35 +1,3 @@
-function loadData() {
-    var $wikiElem = $('#wikipedia-links');
-
-// clear out old data before new request
-    $wikiElem.text("");
-
-    // load wikipedia data
-
-    var wikiUrl = 'http://en.wikipedia.org/w/api.php?action=opensearch&search=' + self.name + '&format=json&callback=wikiCallback';
-    var wikiRequestTimeout = setTimeout(function () {
-        $wikiElem.text("failed to get wikipedia resources");
-    }, 8000);
-
-    $.ajax({
-        url: wikiUrl,
-        dataType: "jsonp",
-        jsonp: "callback",
-        success: function (response) {
-            var articleList = response[1];
-
-            for (var i = 0; i < articleList.length; i++) {
-                articleStr = articleList[i];
-                var url = 'http://en.wikipedia.org/wiki/' + articleStr;
-                $wikiElem.append('<li><a href="' + url + '">' + articleStr + '</a></li>');
-            }
-
-            clearTimeout(wikiRequestTimeout);
-        }
-    });
-}
-
-
 // Helper function for taking focus away from textbox on iOS devices
 function hideIOSKeyboard() {
     document.activeElement.blur();
@@ -52,7 +20,7 @@ function MetroStations(dataObj) {
         position: {lat: self.latitude, lng: self.longitude},
         map: map,
         title: self.name,
-        icon: 'images/metro-logo.png'
+        icon: 'images/m_.png'
     });
 
     // Create the info window for this MetroStations object
@@ -71,7 +39,7 @@ function MetroStations(dataObj) {
             content += '<span class="info-routes">' + self.opened +
                 '</span></p>';
             content += '<a class="wikiLink" href="' +
-                self.url + '" target="_blank">Wiki Info ' + '<i class="fa fa-wikipedia-w"></i>' + '</a>'
+                self.url + '" target="_blank"><i class="fa fa-wikipedia-w"></i> Wiki Info ' + '</a>'
             self.infoWindow.setContent(content);
         }
 
@@ -266,6 +234,7 @@ function initMap() {
         disableDefaultUI: true
     });
 
+
     // Ensure focus is taken away from textbox when map is touched (on iOS)
     map.addListener('click', function () {
         hideIOSKeyboard();
@@ -287,5 +256,3 @@ function initMapLoadError() {
 
 // Google Map object
 var map;
-
-$('#form-container').submit(loadData);
